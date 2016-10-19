@@ -1,6 +1,10 @@
 # nerdcator
 [session] mapping nerdy places at Mozfest
 
+![WorldMap](images/world.jpg)
+
+*[World map](http://farm8.staticflickr.com/7123/7105972961_c17a3f75f6_b.jpg) by Maria Zaikina, available under a Creative Commons Attribution License 2.0*
+
 ## description
 
 Although there are innumerable travel maps, books, and apps for places to see around the world, there are few such resources for scientist/nerd travelers. With Nerdcator we want to create an open data repository that collects such places in a crowdsourced manner, creating a global community of fellow scientist/nerds. We will demonstrate a basic app that allows travelers to find nearby sites of special interest to scientists/nerds such as geological/botanical features, offbeat museums, graves of our scientific heroes, locations of historic/scientific events, and even research labs offering tours. 
