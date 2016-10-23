@@ -1,5 +1,8 @@
 # EpiCollect
 
+* [English Version](#English)
+* [German Version](#German)
+
 ## English
 
 [**EpiCollect**](http://www.epicollect.net/) is a mobile/web application for collecting geodata with a smartphone. The project was funded by the Wellcome Trust and was designed for collecting epidemiological data directly in the field.
