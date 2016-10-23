@@ -1,7 +1,7 @@
 # EpiCollect
 
-* [English Version](#English)
-* [German Version](#German)
+* [English Version](#english)
+* [German Version](#german)
 
 ## English
 
