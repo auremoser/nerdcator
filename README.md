@@ -24,6 +24,27 @@ We want attendees to design the next iteration of the app, to refine the social 
 * Egle Marija Ramanauskaite, EpiCollect, [@seplute](https://twitter.com/seplute)
 * Sujai Kumar, Edinburgh University, [@sujaik](https://twitter.com/sujaik)
 
+## Talk outline
+
+### Talking part:
+
+Goal: to create a shared map for nerd travel (but the template can be used for any other kind of travel/shared interest)
+
+Methods: (divided into three main parts)
+
+1. Collecting data (different ways of doing this - using Google Forms, EpiCollect, WikiVoyage). Ideally show one city each
+2. Curating data (do we need this section?). What curation model works? Authorised users?
+3. Displaying data (Carto, EpiCollect, OSM). Ideally in a browser, or on a smartphone
+
+### Doing part:
+
+1. Ask attendees to sign in (and let us know if they want updates on the project)
+2. Encourage everyone to enter their favourite nerd travel recommendations, and to suggest sources for other nerd travel
+3. Get feedback on what they think is the easiest way to enter/view data out of the options on offer, or any others
+
+### Wrap up:
+
+
 ## links
 
 * session in the [Mozfest 2016 schedule](https://app.mozillafestival.org/#_session-443)
