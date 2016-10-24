@@ -51,4 +51,5 @@ Methods: (divided into three main parts)
 ## links
 
 * session in the [Mozfest 2016 schedule](https://app.mozillafestival.org/#_session-443)
-* Our [Etherpad for Feedback & chatting](https://public.etherpad-mozilla.org/p/mozfest-2016-nerdcator---crowdsourced-maps-for-ner)
+* Our [Mozfest 2016 Etherpad for Feedback & chatting](https://public.etherpad-mozilla.org/p/mozfest-2016-nerdcator---crowdsourced-maps-for-ner)
+* Our [earlier etherpad where we planned the session](https://gedankenstuecke.piratenpad.de/nerdcator).
