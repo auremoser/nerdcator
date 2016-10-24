@@ -33,17 +33,20 @@ Goal: to create a shared map for nerd travel (but the template can be used for a
 Methods: (divided into three main parts)
 
 1. Collecting data (different ways of doing this - using Google Forms, EpiCollect, WikiVoyage). Ideally show one city each
-2. Curating data (do we need this section?). What curation model works? Authorised users?
-3. Displaying data (Carto, EpiCollect, OSM). Ideally in a browser, or on a smartphone
+2. Displaying data (Carto, EpiCollect, OSM). Ideally in a browser, or on a smartphone
 
 ### Doing part:
 
 1. Ask attendees to sign in (and let us know if they want updates on the project)
 2. Encourage everyone to enter their favourite nerd travel recommendations, and to suggest sources for other nerd travel that we could scrape
-3. Get feedback on what everyone thinks is the best way to enter/curate/view data out of the options on offer, or any others that are recommended
+3. Talk about curating data (do we need this section?). What curation model works? Authorised users?
+4. Get feedback on what everyone thinks is the best way to enter/curate/view data out of the options on offer, or any others that are recommended
 
 ### Wrap up:
 
+1. Decide next steps (based on attendee feedback)
+2. Make sure everyone knows where the repo lives
+3. Handouts (stickers/?)
 
 ## links
 
