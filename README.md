@@ -24,7 +24,7 @@ We want attendees to design the next iteration of the app, to refine the social 
 * Egle Marija Ramanauskaite, EpiCollect, [@seplute](https://twitter.com/seplute)
 * Sujai Kumar, Edinburgh University, [@sujaik](https://twitter.com/sujaik)
 
-## Talk outline
+## session structure
 
 ### Talking part:
 
@@ -39,8 +39,8 @@ Methods: (divided into three main parts)
 ### Doing part:
 
 1. Ask attendees to sign in (and let us know if they want updates on the project)
-2. Encourage everyone to enter their favourite nerd travel recommendations, and to suggest sources for other nerd travel
-3. Get feedback on what they think is the easiest way to enter/view data out of the options on offer, or any others
+2. Encourage everyone to enter their favourite nerd travel recommendations, and to suggest sources for other nerd travel that we could scrape
+3. Get feedback on what everyone thinks is the best way to enter/curate/view data out of the options on offer, or any others that are recommended
 
 ### Wrap up:
 
