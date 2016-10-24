@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nerdcator | CartoJS</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <link rel="shortcut icon" href="https://carto.com/favicon.ico" />
+    <link rel="stylesheet" href="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+    <style>
+      html, body, #map {
+        background-color: #FFF3E0;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+      }
+      header {
+        background-color: #FFD180;
+        font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+        font-size: 45px;
+        text-align: center;
+      }
+      #map {
+        width: 55%;
+      }
+      #form {
+        height: 400;
+        float: right;
+        top: 0px;
+        right: 0px;
+      }
+      .cartodb-popup-content-wrapper {
+       height: 275px;
+      }
+      .cartodb-popup-content {
+       height: 175px;
+      }
+      #infowindow_template {
+          width: 250px;
+      }
+      div.cartodb-popup.v2 {
+        width: 250px  !important;
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Nerdcator</header>
+
+    <div id="form"><iframe src="https://docs.google.com/a/mozillafoundation.org/forms/d/e/1FAIpQLSdWnNvyuSpcz_p5NTXLEb57x3eWorMPSTgt4-j88t0w9gEGtQ/viewform?embedded=true" width="640" height="800" frameborder="0" float="right" marginheight="0" marginwidth="0">Loading...</iframe></div>
+    <div id="map"></div>
+    <!-- add infowindows -->
+    <script type="infowindow/html" id="infowindow_template">
+      <div class="cartodb-popup v2">
+        <a href="#close" class="cartodb-popup-close-button close">x</a>
+         <div class="cartodb-popup-content-wrapper">
+           <div class="cartodb-popup-header">
+           </div>
+           <div class="cartodb-popup-content">
+             <h4></h4>
+           </div>
+         </div>
+         <div class="cartodb-popup-tip-container"></div>
+      </div>
+    </script>
+
+    <!-- include cartodb.js library -->
+    <script src="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/cartodb.js"></script>
+
+    <script>
+    function main() {
+      var map = new L.Map('map', {
+          center: [0,0],
+          zoom: 2
+        });
+
+        L.tileLayer('https://cartocdn_{s}.global.ssl.fastly.net/base-antique/{z}/{x}/{y}.png', {
+          attribution: ''
+        }).addTo(map);
+    //add vis.json for nerdcator map
+        cartodb.createLayer(map, 'https://auremoser.carto.com/api/v2/viz/025a7af6-9082-11e6-80fb-0ecd1babdde5/viz.json')
+
+        .addTo(map)
+    // add infowindow to done callback
+        .done(function(layers) {
+                  
+                  // define sublayer
+                  var sublayer = layers.getSubLayer(0);
+                  
+                  // add infowindow interactivity to the sublayer (show cartodb_id and name columns from the table)
+                   cartodb.vis.Vis.addInfowindow(map, sublayer, ['what_is_the_place_called', 'where_is_this_place', 'why_is_it_important']);
+                   
+                // add basemap
+                 L.tileLayer('http://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png',{
+                   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://carto.com/attributions">CARTO</a>',zIndex:100
+                  }).addTo(map);
+                })
+              }
+         
+    window.onload = main;
+    </script>
+  </body>
+</html>
