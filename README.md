@@ -19,7 +19,7 @@ We want attendees to design the next iteration of the app, to refine the social 
 
 ## facilitators
 
-* Bastian Greshake, OpenSNP, [@gedankenstuecke](https://twitter.com/gedankenstuecke)
+* Bastian Greshake, openSNP, [@gedankenstuecke](https://twitter.com/gedankenstuecke)
 * Aurelia Moser, Mozilla Science Lab, [@auremoser](https://twitter.com/auremoser)
 * Egle Marija Ramanauskaite, EpiCollect, [@seplute](https://twitter.com/seplute)
 * Sujai Kumar, Edinburgh University, [@sujaik](https://twitter.com/sujaik)
