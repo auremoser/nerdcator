@@ -60,12 +60,12 @@ Methods: (divided into two main parts)
 ## German
 
 ## Beschreibung
-Obwohl es zahllose Reisekarten, Bücher und Apps gibt, die sehenswerte Orte überall auf der Welt empfehlen, gibt es nur wenige, die sich an Forscher*innen und Nerds richten. Mit *Nerdcator* wollen wir ein offenes Repository errichten in dem wir zusammen solche Orte sammeln und damit eine weltumspannende Gemeinschaft aufbauen. Wir wollen eine einfache Beispiel-Application vorstellen, die interessante Orte für Forscher*innen und Nerds zeigt, zum Beispiel geologische und botanische Besonderheiten, unbekannte Museen, die Gräber unserer wissenschaftlichen Held*innen, Orte von historischer/wissenschaftlicher Bedeutung, und vielleicht sogar Forschungseinrichtungen, die Touren anbieten.
+Obwohl es zahllose Reisekarten, Bücher und Apps gibt, die sehenswerte Orte überall auf der Welt empfehlen, gibt es nur wenige, die sich an Forscher\*innen und Nerds richten. Mit *Nerdcator* wollen wir ein offenes Repository errichten in dem wir zusammen solche Orte sammeln und damit eine weltumspannende Gemeinschaft aufbauen. Wir wollen eine einfache Beispiel-Application vorstellen, die interessante Orte für Forscher\*innen und Nerds zeigt, zum Beispiel geologische und botanische Besonderheiten, unbekannte Museen, die Gräber unserer wissenschaftlichen Held\*innen, Orte von historischer/wissenschaftlicher Bedeutung, und vielleicht sogar Forschungseinrichtungen, die Touren anbieten.
 
-Mit unseren Session-Teilnehmer*innen wollen wir die nächste Iteration unserer App entwerfen, um die sozialen und technologischen Aspekte des Projekts zu verfeiern, und um dort zu bestehen, wo ähnliche Projekte (wie nerdydaytrips.com) gescheitert sind. Unsere Teilnehmer*innen können die App auch nach dem Festival ausprobieren und Orte wie die Greenwich Meridian Line, die Cutty Sark oder das Haus des Astronomen Frank Dyson besuchen.
+Mit unseren Session-Teilnehmer\*innen wollen wir die nächste Iteration unserer App entwerfen, um die sozialen und technologischen Aspekte des Projekts zu verfeiern, und um dort zu bestehen, wo ähnliche Projekte (wie nerdydaytrips.com) gescheitert sind. Unsere Teilnehmer\*innen können die App auch nach dem Festival ausprobieren und Orte wie die Greenwich Meridian Line, die Cutty Sark oder das Haus des Astronomen Frank Dyson besuchen.
 
 * `tools/` - Enthält verschiedene Ansätze um eine solche Karten-App zu erstellen
-* `sources/` - Vorschläge wo die Teilnehmer*innen entsprechende Daten bekommen könnten, um die Karte mit Punkten zu füllen
+* `sources/` - Vorschläge wo die Teilnehmer\*innen entsprechende Daten bekommen könnten, um die Karte mit Punkten zu füllen
 * `data/` - Echte Datenpunkte, um die Karte zu befüllen
 
 ### Facilitators
