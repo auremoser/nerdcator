@@ -12,7 +12,7 @@
 
 ## Description
 
-Although there are innumerable travel maps, books, and apps for places to see around the world, there are few such resources for scientist/nerd travelers. With *Nerdcator* we want to create an open data repository that collects such places in a crowdsourced manner, creating a global community of fellow scientist/nerds. We will demonstrate a basic app that allows travelers to find nearby sites of special interest to scientists/nerds such as geological/botanical features, offbeat museums, graves of our scientific heroes, locations of historic/scientific events, and even research labs offering tours.
+Although there are innumerable travel maps, books, and apps for places to see around the world, there are few such resources for scientist/nerd travelers. With *Nerdcator* we want to create an open data repository that collects such places in a crowdsourced manner, creating a global community of fellow scientists/nerds. We will demonstrate a basic app that allows travelers to find nearby sites of special interest to scientists/nerds such as geological/botanical features, offbeat museums, graves of our scientific heroes, locations of historic/scientific events/interest, and even research labs offering tours.
 
 We want attendees to design the next iteration of the app, to refine the social and technological features that will enable *Nerdcator* to succeed where other such efforts (e.g., nerdydaytrips.com) have failed to take off. Participants can also test the app after festival hours with sites such as the Greenwich meridian line, the Cutty Sark clipper ship, or astronomer Frank Dyson’s home.
 
@@ -60,13 +60,13 @@ Methods: (divided into two main parts)
 ## German
 
 ## Beschreibung
-Obwohl es zahllose Reisekarten, Bücher und Apps gibt, welche einem sehenswerte Orte überall auf der Welt empfehlen, gibt es nur wenige die sich an Forscher*innen und Nerds richten. Mit *Nerdcator* wollen wir ein offenes Repository errichten in dem wir zusammen solche Orte sammeln und damit eine weltumspannende Gemeinschaft aufbauen. Wir wollen eine einfache Beispiel-Application vorstellen die einem interessante Orte für Forscher*innen und Nerds zeigt, zum Beispiel geologische und botanische Eigenheiten, unbekannte Museen, die Gräber unserer wissenschaftlichen Held*innen, Orte von historischer/wissenschaftlichen Ereignissen, und vielleicht sogar Forschungseinrichtungen die Touren anbieten.
+Obwohl es zahllose Reisekarten, Bücher und Apps gibt, die sehenswerte Orte überall auf der Welt empfehlen, gibt es nur wenige, die sich an Forscher*innen und Nerds richten. Mit *Nerdcator* wollen wir ein offenes Repository errichten in dem wir zusammen solche Orte sammeln und damit eine weltumspannende Gemeinschaft aufbauen. Wir wollen eine einfache Beispiel-Application vorstellen, die interessante Orte für Forscher*innen und Nerds zeigt, zum Beispiel geologische und botanische Besonderheiten, unbekannte Museen, die Gräber unserer wissenschaftlichen Held*innen, Orte von historischer/wissenschaftlicher Bedeutung, und vielleicht sogar Forschungseinrichtungen, die Touren anbieten.
 
-Mit unseren Session-Teilnehmer*innen wollen wir die nächste Iteration unserer App entwerfen um die sozialen und technologischen Aspekte des Projekts zu verfeiern die es uns ermöglichen sollen dort zu bestehen wo ähnliche Projekte (wie nerdydaytrips.com) gescheitert sind. Unsere Teilnehmer*innen können die App auch nach dem Festival ausprobieren und Orte wie die Greenwich Meridian Line, die Cutty Sark oder das Haus von Astronom Frank Dyson zu besuchen.
+Mit unseren Session-Teilnehmer*innen wollen wir die nächste Iteration unserer App entwerfen, um die sozialen und technologischen Aspekte des Projekts zu verfeiern, und um dort zu bestehen, wo ähnliche Projekte (wie nerdydaytrips.com) gescheitert sind. Unsere Teilnehmer*innen können die App auch nach dem Festival ausprobieren und Orte wie die Greenwich Meridian Line, die Cutty Sark oder das Haus des Astronomen Frank Dyson besuchen.
 
 * `tools/` - Enthält verschiedene Ansätze um eine solche Karten-App zu erstellen
-* `sources/` - Vorschläge wo man entsprechende Daten bekommen könnte um die Karte mit Punkten zu füllen
-* `data/` - Echte Datenpunkte um die Karte zu befüllen
+* `sources/` - Vorschläge wo die Teilnehmer*innen entsprechende Daten bekommen könnten, um die Karte mit Punkten zu füllen
+* `data/` - Echte Datenpunkte, um die Karte zu befüllen
 
 ### Facilitators
 
@@ -79,7 +79,7 @@ Mit unseren Session-Teilnehmer*innen wollen wir die nächste Iteration unserer A
 
 #### Diskussionsteil:
 
-Ziel: Eine geteilte Karte für nerdige Reisen erstellen (wobei das Grundkonzept für alle anderen Arten von geteilten Interessen funktioniert)
+Ziel: Eine geteilte Karte für nerdige Reisen erstellen (wobei das Grundkonzept für alle anderen Arten von geteilten Interessen funktioniert).
 
 Methodik: (2-teilig)
 
@@ -88,15 +88,15 @@ Methodik: (2-teilig)
 
 #### Realisierungsphase:
 
-1. Teilnehmende melden sich an und sagen ob sie über Neuigkeiten aus dem Projekt informiert werden wollen
-2. Alle teilen ihre liebsten, nerdigen Reiseempfehlungen. Vorschläge von wo man Tipps kopieren könnte.
-3. Wie kuratiert man diese Daten? Welche Modelle funktionieren?
-4. Feedback dazu wie man am besten Daten sammelt, visualisiert, kuratiert, welche Alternativen gibt es?
+1. Teilnehmende melden sich an und sagen, ob sie über Neuigkeiten aus dem Projekt informiert werden wollen
+2. Alle teilen ihre liebsten, nerdigen Reiseempfehlungen. Vorschläge, von wo Tipps kopiert werden könnten.
+3. Wie werden diese Daten kuratiert? Welche Modelle funktionieren?
+4. Feedback zum Sammeln von Daten, Visualisieren, Kuratieren, welche Alternativen gibt es?
 
 #### Ende:
 
 1. Was sind die nächsten gemeinschaftlichen Schritte?
-2. Wo findet man das Projekt?
+2. Wo finde ich das Projekt?
 3. Handouts (stickers!)
 
 ### Links
