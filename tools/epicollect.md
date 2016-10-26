@@ -53,7 +53,7 @@ You can also find a step-by-step guide based on screenshots.
 ## German
 [**EpiCollect**](http://www.epicollect.net/) ist eine App um Geodaten mit seinem Smartphone zu sammeln. Das Projekt wurde vom Wellcome Trust gefördert und entwickelt um epidemiologische Daten im Feld zu sammen.
 
-Mensch kann seine eigenen Projekte erstellen um Geodaten zu sammeln und auf einer Karte darzustellen. Hier gibt es eine kleine Anleitung wie man sein eigenes Projekt startet. Unser eigenes Nerdcator-Projekt findet mensch unter [http://plus.epicollect.net/nerdcator/](http://plus.epicollect.net/nerdcator/). Die Erstellung wurde mit dem [online creator](http://plus.epicollect.net/createProject.html) gemacht.
+Mensch kann seine eigenen Projekte erstellen um Geodaten zu sammeln und auf einer Karte darzustellen. Hier gibt es eine kleine Anleitung wie eins sein eigenes Projekt startet. Unser eigenes Nerdcator-Projekt findet mensch unter [http://plus.epicollect.net/nerdcator/](http://plus.epicollect.net/nerdcator/). Die Erstellung wurde mit dem [online creator](http://plus.epicollect.net/createProject.html) gemacht.
 
 Weil es keinen besseren Weg gibt zu sehen wie das Ganze funktioniert, ladet euch die App runter und fügt einen Punkt hinzu:
 
@@ -67,7 +67,7 @@ Weil es keinen besseren Weg gibt zu sehen wie das Ganze funktioniert, ladet euch
 
 Und das war es (es sollte "Y" neben eurem Geodaten-Punkt sagen).
 
-Ihr könnt die Punkte unter  [http://plus.epicollect.net/nerdcator/](http://plus.epicollect.net/nerdcator/) sehen, wählt dort `"View all"`. Man kann die Daten entweder als Tabelle oder auf einer Karte sehen, in dem mensch zum relevanten Tab wechselt (siehe die beiden Screenshots unten). Darüber hinaus kann man alle Daten auch als CSV etc. exportieren.
+Ihr könnt die Punkte unter  [http://plus.epicollect.net/nerdcator/](http://plus.epicollect.net/nerdcator/) sehen, wählt dort `"View all"`. Eins kann die Daten entweder als Tabelle oder auf einer Karte sehen, in dem mensch zum relevanten Tab wechselt (siehe die beiden Screenshots unten). Darüber hinaus kann eins alle Daten auch als CSV etc. exportieren.
 
 ![WorldMap](../images/epicollect/table.png)
 

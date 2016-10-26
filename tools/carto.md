@@ -41,22 +41,22 @@ Some instructions from the [etherpad](https://gedankenstuecke.piratenpad.de/nerd
 
 ## German
 
-*CARTO* ist eine offene, mächtige und intuitive Platform um Geodatenzu visualisieren etc. Neben einer bezahlten Version gibt es eine kostenlose Einsteiger-Variante, welche ausreicht um Daten einfach auf einer Karte anzuzeigen. Um unsere Geodaten zu sammeln haben wir uns für *Google Forms* entschieden, dank der vielfältigen Import-Möglichkeiten von *Carto* könnte man diese aber auch auswechseln.
+*CARTO* ist eine offene, mächtige und intuitive Platform um Geodatenzu visualisieren etc. Neben einer bezahlten Version gibt es eine kostenlose Einsteiger-Variante, welche ausreicht um Daten einfach auf einer Karte anzuzeigen. Um unsere Geodaten zu sammeln haben wir uns für *Google Forms* entschieden, dank der vielfältigen Import-Möglichkeiten von *Carto* könnte eins diese aber auch auswechseln.
 
 ### Sammeln & Visualisieren unserer Daten  Data
 ![google forms](../images/carto/form-bastian.png)
 
-Sowohl Bastian als auch Aurelia haben es ausprobiert. Mit einem einfachen *Google Form* kann Mensch Daten entweder per Längen- und Breitengrad hinzufügen ([siehe Bastians Formular](https://docs.google.com/forms/d/e/1FAIpQLSe0e_H-pTPVqVlQK-R-hvuMKn9zyPJ2OpqJ0efL1hPYDhx6BQ/viewform)) oder mit Hilfe der *street-level geocoding* Funktion ([siehe Carto Docs (english)](https://carto.com/docs/carto-engine/dataservices-api/geocoding-functions/#street-level-geocoder)).
+Sowohl Bastian als auch Aurelia haben es ausprobiert. Mit einem einfachen *Google Form* kann eins Daten entweder per Längen- und Breitengrad hinzufügen ([siehe Bastians Formular](https://docs.google.com/forms/d/e/1FAIpQLSe0e_H-pTPVqVlQK-R-hvuMKn9zyPJ2OpqJ0efL1hPYDhx6BQ/viewform)) oder mit Hilfe der *street-level geocoding* Funktion ([siehe Carto Docs (english)](https://carto.com/docs/carto-engine/dataservices-api/geocoding-functions/#street-level-geocoder)).
 
 ![google spreadsheet](../images/carto/spreadsheet-bastian.png)
 
 ![carto-google-endpoint](../images/carto/carto-connect-bastian.png)
 
-In beiden Fällen bekommt man ein *Google Spreadsheet* welches die Datenpunkte enthält. Dieses kann man einfach in Carto importieren, dank des *Google Drive*-Importers.
+In beiden Fällen bekommt mensch ein *Google Spreadsheet* welches die Datenpunkte enthält. Dieses kann mensch einfach in Carto importieren, dank des *Google Drive*-Importers.
 
 ![carto-map-bastian](../images/carto/carto-map-bastian.png)
 
-Die so importierten Daten [können dann auf der Carto-Karte angezeigt werden](https://gedankenstuecke.carto.com/viz/1312f3ba-8eba-11e6-b515-0ef7f98ade21/public_map). Wenn das *Google Spreadsheet* Kategorien enthalten hat kann man verschiedenen Kategorien auch verschiedene Icons zuordnen. Dazu kann man auswählen welche Informationen auf in den Tooltips auf der Karte angezeigt werden sollen. [Aurelia's Karte kann man hier sehen](https://auremoser.carto.com/builder/fe0d9b1c-9082-11e6-aeba-0e3ebc282e83/embed
+Die so importierten Daten [können dann auf der Carto-Karte angezeigt werden](https://gedankenstuecke.carto.com/viz/1312f3ba-8eba-11e6-b515-0ef7f98ade21/public_map). Wenn das *Google Spreadsheet* Kategorien enthalten hat kann mensch verschiedenen Kategorien auch verschiedene Icons zuordnen. Dazu kann eins auswählen welche Informationen auf in den Tooltips auf der Karte angezeigt werden sollen. [Aurelia's Karte kann mensch hier sehen](https://auremoser.carto.com/builder/fe0d9b1c-9082-11e6-aeba-0e3ebc282e83/embed
 ).
 
 Ein paar mehr (englische) Anmerkungen gibt es im Etherpad [etherpad](https://gedankenstuecke.piratenpad.de/nerdcator).
@@ -65,14 +65,14 @@ Ein paar mehr (englische) Anmerkungen gibt es im Etherpad [etherpad](https://ged
 ### Vorteile
 * Mensch kann die Daten einfach visualisieren
 * Ist ohne viel Aufwand hübsch
-* Man könnte relativ einfach eine Such-Funktion einfügen
-* Von Google Drive kann man Daten einfach importieren
-* Man könnte die Street-Level Geokodierung nutzen, siehe https://carto.com/docs/carto-engine/dataservices-api/geocoding-functions/#street-level-geocoder
+* Mensch könnte relativ einfach eine Such-Funktion einfügen
+* Von Google Drive kann mensch Daten einfach importieren
+* Mensch könnte die Street-Level Geokodierung nutzen, siehe https://carto.com/docs/carto-engine/dataservices-api/geocoding-functions/#street-level-geocoder
 * `UPDATE nerdcator_entry_form_responses SET the_geom = cdb_geocode_street_point(where_is_this_place_full_address_with_number_city_state_co)` für dynamische Updates
 * Das Design ist hübsch und kan kann die Form-Felder einfach zu Tooltips umwandeln.
 
 ### Nachteile
-* Die automatischen Geocodierungen sind nicht immer korrekt und man kann sie nicht per Hand korrigieren beim Import
+* Die automatischen Geocodierungen sind nicht immer korrekt und mensch kann sie nicht per Hand korrigieren beim Import
 * Der automatische Sync von *Google Spreadsheet* zu *Carto* ist nur in der Bezahl-Version möglich.
 * Die Dateneingabe mit Google Forms ist nicht sehr bequem
 
