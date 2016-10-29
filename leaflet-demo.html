@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leaflet Boilerplate</title>
+	<!--  -->
+	<script type="text/javascript" src="https://npmcdn.com/@turf/turf@3.5.1/turf.min.js"></script>
+	<!-- leaflet -->
+	<link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+	<script src="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<!-- bootstrap -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--  filesaver -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2014-11-29/FileSaver.min.js"></script>
+	<!-- d3 -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+	<!-- leaflet draw -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.4.0/leaflet.draw.css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.4.0/leaflet.draw.js"></script>
+</head>
+<style type="text/css">
+	html, body {
+	   height: 100%;
+	}
+	#mapid{
+		width:100%;
+		height:100%;
+	}
+</style>
+<body>
+	<div id="mapid"></div>
+	<script type="text/javascript">
+		var map;
+		function initMap(){
+		    // initialize map container
+		    map = L.map('mapid').setView([51.508530, 0.0], 13);
+
+		    // get the stamen toner-lite tiles
+		    var Stamen_Toner = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.{ext}', {
+		        attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> — Map data © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+		        subdomains: 'abcd',
+		        minZoom: 0,
+		        maxZoom: 20,
+		        ext: 'png'
+		    });
+
+		    // add the tiles to the map
+		    Stamen_Toner.addTo(map);
+
+		    //disable scroll wheel zoom
+		    map.scrollWheelZoom.disable();
+		}
+		initMap();
+
+		// Initialise the FeatureGroup to store editable layers
+		var drawnItems = new L.FeatureGroup();
+		map.addLayer(drawnItems);
+
+		// Initialise the draw control and pass it the FeatureGroup of editable layers
+		var drawControl = new L.Control.Draw({
+		    edit: {
+		        featureGroup: drawnItems
+		    },
+				draw : {
+						polyline : false,
+						polygon : false,
+						rectangle : false,
+						circle : false
+				}
+		});
+		map.addControl(drawControl);
+
+
+		// and keep the drawn items on the map
+		map.on('draw:created', function(e) {
+		    var type = e.layerType,
+		        layer = e.layer;
+
+		    if (type === 'marker') {
+						var lat = layer.getLatLng().lat;
+						var long = layer.getLatLng().lng;
+						//var poptext = "<b><a href='";
+						//poptext += "https://docs.google.com/forms/d/e/1FAIpQLSfdsZNlgxK72DkoXlNpJVWDN08uTZNPmqx3Zik-L5Btmdj9WQ/viewform?entry.1819633361=";
+						//poptext += lat + "&entry.2141972414=" + long;
+						//poptext += "'>Enter Your New Point of Interest</a></b>"
+						var poptext = '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfdsZNlgxK72DkoXlNpJVWDN08uTZNPmqx3Zik-L5Btmdj9WQ/viewform?embedded=true&entry.1819633361='+ lat + "&entry.2141972414=" + long + '" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>';
+		        layer.bindPopup(poptext);
+		    }
+
+		    drawnItems.addLayer(layer);
+		});
+
+
+		map.on("keypress", function(e){
+		  console.log(e.originalEvent.key);
+		  if(e.originalEvent.key == 1){
+		  	downloadJson(drawnItems, "mydrawnItems.geojson");
+		  }
+		});
+
+		// add your things below
+	</script>
+</body>
+</html>
