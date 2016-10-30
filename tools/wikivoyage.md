@@ -27,7 +27,7 @@ There are two main ways to add Nerdcator listings to Wikivoyage:
     
     In the text edit window, add a Listing (green circle) rather than a See Listing (Red circle) because this page seems to prefer ordinary listings.
     
-    ![Science_tourism_section](../images/wikivoyage/Science_Tourism_section.png)
+    ![Science_tourism_section](../images/wikivoyage/Science_Tourism_edit.png)
     
 
 In both cases, you should be able to find your listings (and we should be able to scrape them) if we search for the word "nerdcator" or go to this link: https://en.wikivoyage.org/w/index.php?search=nerdcator
