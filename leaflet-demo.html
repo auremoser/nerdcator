@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Leaflet Boilerplate</title>
+	<title>Nerdcator.org: Leaflet-Demo</title>
 	<!--  -->
 	<script type="text/javascript" src="https://npmcdn.com/@turf/turf@3.5.1/turf.min.js"></script>
 	<!-- leaflet -->
@@ -38,19 +38,20 @@
 		    map = L.map('mapid').setView([51.508530, 0.0], 13);
 
 		    // get the stamen toner-lite tiles
-		    var Stamen_Toner = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.{ext}', {
-		        attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> — Map data © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-		        subdomains: 'abcd',
+		    var Stamen_Toner = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		        attribution: '© <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+		        // subdomains: 'abcd',
 		        minZoom: 0,
-		        maxZoom: 20,
-		        ext: 'png'
+						maxZoom: 18
+		        // maxZoom: 20,
+		        // ext: 'png'
 		    });
 
 		    // add the tiles to the map
 		    Stamen_Toner.addTo(map);
 
 		    //disable scroll wheel zoom
-		    map.scrollWheelZoom.disable();
+		    //map.scrollWheelZoom.disable();
 		}
 		initMap();
 
