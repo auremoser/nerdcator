@@ -148,3 +148,4 @@ Hier noch eine Screenshot-basierte Schritt-für-Schritt Anleitung:
 
 ![WorldMap](../images/epicollect/10.png)
 
+
