@@ -35,7 +35,7 @@
 		var map;
 		function initMap(){
 		    // initialize map container
-		    map = L.map('mapid').setView([51.508530, 0.0], 13);
+		    map = L.map('mapid').setView([51.508530, 0.0], 2);
 
 		    // get the stamen toner-lite tiles
 		    var Stamen_Toner = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -100,6 +100,457 @@
 		  	downloadJson(drawnItems, "mydrawnItems.geojson");
 		  }
 		});
+
+		var sample_points = {
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 25.27664423,54.67440171 ]
+    },
+    "properties": {
+    "Timestamp":"10/30/2016 14:19:20",
+    "Type":"Hackerspace",
+    "Scientific Disciplines":"Biological Sciences, Chemistry, Physics, Mathematics, Engineering, Technology, Hacking",
+    "Title":"Technarium",
+    "Description":"Hackerspace",
+    "Importance":"An open hackerspace with all sorts of cool tools, tech events & beer",
+    "Link":"https://technariumas.lt"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.1454401016,51.56610675 ]
+    },
+    "properties": {
+    "Timestamp":"10/30/2016 14:21:21",
+    "Type":"Graves",
+    "Scientific Disciplines":"Science Fiction",
+    "Title":"Douglas Adams' grave",
+    "Description":"The grave of Douglas Adams, author of the Hitchhiker's Guide to the Galaxy books. Bring an extra pen, which fans leave in memoriam. ",
+    "Importance":"Science Fiction",
+    "Link":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0.1182317734,52.20403649 ]
+    },
+    "properties": {
+    "Timestamp":"10/30/2016 14:22:10",
+    "Type":"Historical Landmarks",
+    "Scientific Disciplines":"Biological Sciences, Chemistry, Pub",
+    "Title":"The Eagle",
+    "Description":"",
+    "Importance":"The place where Francis Crick interrupted patrons' lunchtime on 28 February 1953 to announce that he and James Watson had \"discovered the secret of life\" after they had come up with their proposal for the structure of DNA.",
+    "Link":"https://en.wikipedia.org/wiki/The_Eagle,_Cambridge"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.131905556,41.41317141 ]
+    },
+    "properties": {
+    "Timestamp":"10/30/2016 14:22:20",
+    "Type":"Museums",
+    "Scientific Disciplines":"Biological Sciences, Chemistry, Physics, Mathematics, Engineering, Technology",
+    "Title":"CosmoCaixa",
+    "Description":"Science museum for kids and adults alike",
+    "Importance":"",
+    "Link":"http://bcnshop.barcelonaturisme.com/shopv3/en/product/325/cosmocaixa---science-museum.html"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -22.99301147,66.02359928 ]
+    },
+    "properties": {
+    "Timestamp":"10/30/2016 14:25:25",
+    "Type":"Museums",
+    "Scientific Disciplines":"Biological Sciences",
+    "Title":"Arctic Fox Center",
+    "Description":"A museum about the arctic fox populations and the history of them in Iceland",
+    "Importance":"",
+    "Link":"http://www.arcticfoxcentre.com/"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.17553699,55.95097196 ]
+    },
+    "properties": {
+    "Timestamp":"10/30/2016 14:25:58",
+    "Type":"Rock",
+    "Scientific Disciplines":"Geology",
+    "Title":"Lewisian Gneiss Rock",
+    "Description":"3 billion year old rock that you can touch. Public (free) exhibit outside the Dynamic Earth Museum in Edinburgh",
+    "Importance":"It's 3 BILLION YEARS OLD!!!",
+    "Link":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.1278018951,51.53144724 ]
+    },
+    "properties": {
+    "Timestamp":"10/30/2016 14:27:20",
+    "Type":"Lab-Tours",
+    "Scientific Disciplines":"Biological Sciences, Physics, Engineering",
+    "Title":"Francis Crick Institute",
+    "Description":"The Francis Crick Institute, an interdisciplinary medical research institute. Has several sections open to the public, including a learning lab.",
+    "Importance":"On-going scientific research plus important scientific (controversial) figure",
+    "Link":"https://www.crick.ac.uk/"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 1.492488384,43.58674029 ]
+    },
+    "properties": {
+    "Timestamp":"10/30/2016 14:27:38",
+    "Type":"Museums",
+    "Scientific Disciplines":"Space",
+    "Title":"Cité de l'Espace",
+    "Description":"Admire treasures from space\nDiscover actual Spacecraft\nTrain yourself like an astronaut\nMake it rain and shine\nUncover the secret of space\nTravel to the farthest reaches of the cosmos",
+    "Importance":"",
+    "Link":"http://en.cite-espace.com/"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -23.54095459,65.64468599 ]
+    },
+    "properties": {
+    "Timestamp":"10/30/2016 14:28:47",
+    "Type":"Museums",
+    "Scientific Disciplines":"Weird Stuff",
+    "Title":"The Icelandic Sea Monster Museum",
+    "Description":"The history of Icelandic Sea Monsters. Scary!",
+    "Importance":"",
+    "Link":"http://skrimsli.is/"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.826562881,51.17939679 ]
+    },
+    "properties": {
+    "Timestamp":"10/30/2016 14:30:49",
+    "Type":"Historical Landmarks",
+    "Scientific Disciplines":"Physics, Mathematics, Engineering, Social Sciences, Humanities, Technology",
+    "Title":"Stonehenge",
+    "Description":"Stonehenge is a prehistoric monument in Wiltshire, England",
+    "Importance":"Archaeologists believe it was constructed from 3000 BC to 2000 BC. The surrounding circular earth bank and ditch, which constitute the earliest phase of the monument, have been dated to about 3100 BC. Radiocarbon dating suggests that the first bluestones were raised between 2400 and 2200 BC, although they may have been at the site as early as 3000 BC",
+    "Link":"https://en.wikipedia.org/wiki/Stonehenge"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.395063,34.025884 ]
+    },
+    "properties": {
+    "Timestamp":"10/30/2016 14:31:45",
+    "Type":"Museums",
+    "Scientific Disciplines":"Chemistry, Physics, Mathematics, Technology",
+    "Title":"Museum of Jurassic Technology",
+    "Description":"",
+    "Importance":"Cabinet of curiosities about nerdery and science",
+    "Link":"http://www.mjt.org/"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.2404761314,51.54578794 ]
+    },
+    "properties": {
+    "Timestamp":"10/30/2016 14:32:18",
+    "Type":"Graves",
+    "Scientific Disciplines":"Biological Sciences, Chemistry",
+    "Title":"Rosalind Franklin's Grave",
+    "Description":"The most important person in the discovery of the DNA structure is resting here. Leave a stone on her marker.",
+    "Importance":"",
+    "Link":"http://www.theus.org.uk/"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0,0 ]
+    },
+    "properties": {
+    "Timestamp":"10/30/2016 14:36:03",
+    "Type":"Historical Landmarks",
+    "Scientific Disciplines":"Social Sciences, Humanities, Maps",
+    "Title":"Null Island",
+    "Description":"fictional island at the center of the world (0,0) lat/lon",
+    "Importance":"Center of the world",
+    "Link":"http://www.nullisland.com/"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -110.4846954,34.87353851 ]
+    },
+    "properties": {
+    "Timestamp":"10/30/2016 14:38:40",
+    "Type":"Natural Landmark",
+    "Scientific Disciplines":"Earth Science",
+    "Title":"Meteor Crater",
+    "Description":"The world’s best preserved meteorite impact site on Earth",
+    "Importance":"",
+    "Link":"meteorcrater.com"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 10.39589882,43.7232733 ]
+    },
+    "properties": {
+    "Timestamp":"10/30/2016 14:41:22",
+    "Type":"Historical Landmarks",
+    "Scientific Disciplines":"Physics",
+    "Title":"Cattedrale di Pisa",
+    "Description":"Cathedral in Pisa where Galileo Galilei attended services",
+    "Importance":"Place where Galileo observed a swinging lantern aka the pendulum effect",
+    "Link":"opapisa.it"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 138.5977703,-34.91232465 ]
+    },
+    "properties": {
+    "Timestamp":"10/30/2016 14:41:29",
+    "Type":"Graves",
+    "Scientific Disciplines":"Biological Sciences",
+    "Title":"Ronald Aylmer Fisher's grave",
+    "Description":"The founder of frequentist statistics is buried here. ",
+    "Importance":"",
+    "Link":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.176637,39.953201 ]
+    },
+    "properties": {
+    "Timestamp":"10/30/2016 14:42:07",
+    "Type":"Museums",
+    "Scientific Disciplines":"Biological Sciences, Chemistry, Physics",
+    "Title":"Mutter Museum",
+    "Description":"Medical curiosities + physicians museum in Philadelphia",
+    "Importance":"Weird medical curiosities",
+    "Link":"http://muttermuseum.org/"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.33240068,48.83385186 ]
+    },
+    "properties": {
+    "Timestamp":"10/30/2016 14:45:25",
+    "Type":"Museums",
+    "Scientific Disciplines":"Humanities",
+    "Title":"Catacombs of Paris",
+    "Description":"Underground ossuaries in Paris. Creepy!",
+    "Importance":"",
+    "Link":"https://en.wikipedia.org/wiki/Catacombs_of_Paris"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 16.606837,49.19506 ]
+    },
+    "properties": {
+    "Timestamp":"10/30/2016 14:46:24",
+    "Type":"Graves",
+    "Scientific Disciplines":"Chemistry, Physics",
+    "Title":"Gregor Mendel's Grave",
+    "Description":"Gregor Johann Mendel was a German-speaking Moravian-Silesian scientist and Augustinian friar and abbot of St. Thomas' Abbey in Brno who gained posthumous fame as the founder of the modern science of genetics.",
+    "Importance":"Founder of genetics",
+    "Link":"http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=10997"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.1328927279,51.52472577 ]
+    },
+    "properties": {
+    "Timestamp":"10/30/2016 14:47:26",
+    "Type":"Graves",
+    "Scientific Disciplines":"Humanities",
+    "Title":"Jeremy Bentham's auto-icon",
+    "Description":"The philosopher was publicly dissected by his friend, Dr Thomas Southwood Smith, and preserved as an ‘auto-icon’. Jeremy the auto-icon came to the College in 1850, he has been cared for by UCL ever since.",
+    "Importance":"",
+    "Link":"https://www.ucl.ac.uk/museums/jeremy-bentham"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 71.1166048,42.37845 ]
+    },
+    "properties": {
+    "Timestamp":"10/30/2016 14:48:03",
+    "Type":"Museums",
+    "Scientific Disciplines":"Biological Sciences",
+    "Title":"Museum of Glass Flowers",
+    "Description":"",
+    "Importance":"",
+    "Link":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.1159,51.515284 ]
+    },
+    "properties": {
+    "Timestamp":"10/30/2016 14:48:36",
+    "Type":"Museums",
+    "Scientific Disciplines":"Biological Sciences",
+    "Title":"Hunterian Museum",
+    "Description":"Dead things in jars - also - Free. Do not go after lunch",
+    "Importance":"",
+    "Link":"https://www.rcseng.ac.uk/museums-and-archives/hunterian-museum/"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 5.125465393,51.86599806 ]
+    },
+    "properties": {
+    "Timestamp":"10/30/2016 14:49:05",
+    "Type":"Museums",
+    "Scientific Disciplines":"Technology, Mapping, cartography, navigation, all thing location related",
+    "Title":"GeoFort",
+    "Description":"A former fortress island, part of the Dutch waterline defensive system, now changed into a tech museum for all things geospatial. Awarded the international Children in Museums award.",
+    "Importance":"Voted best childrens museum in the world! Also very cool for mapnerds. What more can I say?",
+    "Link":"www.geofort.nl"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 25.559017,55.314718 ]
+    },
+    "properties": {
+    "Timestamp":"10/30/2016 14:58:19",
+    "Type":"Museums",
+    "Scientific Disciplines":"Social Sciences, Astronomy, Ethnography",
+    "Title":"Vilnius University Astronomy Observatory & Ethnocosmology Museum",
+    "Description":"",
+    "Importance":"",
+    "Link":"https://www.google.co.uk/url?sa=t&source=web&rct=j&url=http://www.astro.ff.vu.lt/lt/&ved=0ahUKEwiwxL6a5ILQAhVCK8AKHfcFB0YQFggcMAA&usg=AFQjCNHlODV7J31OQHkha98oew6ncVPeHw&sig2=LR8xvAVvrHN9JtqR86PALw"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 25.28669,54.681905 ]
+    },
+    "properties": {
+    "Timestamp":"10/30/2016 15:10:12",
+    "Type":"Guided tour",
+    "Scientific Disciplines":"Astronomy",
+    "Title":"The old Vilnius University observatory tower",
+    "Description":"Historic observatory tower (not open to the public, but tours can be arranged). Has a display of original Ramsden instruments (and others).",
+    "Importance":"The oldest astronomy observatory in Eastern Europe. ",
+    "Link":"https://lt.wikipedia.org/wiki/Vilniaus_universiteto_astronomijos_observatorija"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -79.29609776,42.90996146 ]
+    },
+    "properties": {
+    "Timestamp":"10/30/2016 15:14:10",
+    "Type":"Ecological site",
+    "Scientific Disciplines":"Biological Sciences",
+    "Title":"Wainfleet Bog",
+    "Description":"A peat bog",
+    "Importance":"Home to an endangered isolated population of massasauga rattlesnakes",
+    "Link":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -21.91551983,64.14306385 ]
+    },
+    "properties": {
+    "Timestamp":"10/30/2016 15:34:54",
+    "Type":"Museums",
+    "Scientific Disciplines":"Biological Sciences, Engineering, Social Sciences, Humanities",
+    "Title":"Icelandic Phallological Museum of Penises",
+    "Description":"8====D",
+    "Importance":"",
+    "Link":"http://phallus.is/en/"
+    }
+  }
+]
+};
+
+L.geoJson(sample_points, {
+    style: function (feature) {
+        return {color: feature.properties.color};
+    },
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup("<b>" + feature.properties.Title + "</b><br/>" + feature.properties.Description +"<br/><a href='"+ feature.properties.Link + "'>" + feature.properties.Link + "</a>");
+    }
+}).addTo(map);
+
+//	L.geoJson(sample_points, onEachFeature: function (feature, layer) {
+//        layer.bindPopup(feature.properties.title);
+//    }).addTo(map);
 
 		// add your things below
 	</script>
