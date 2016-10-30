@@ -2,6 +2,8 @@
 
 * [English Version](#english)
 * [German Version](#german)
+* [Greek Version](#greek)
+
 
 ## English
 
@@ -97,3 +99,53 @@ Hier noch eine Screenshot-basierte Schritt-für-Schritt Anleitung:
 
 ## Hindi
 *maybe to come*
+
+## Greek
+
+Το [**EpiCollect**](http://www.epicollect.net/) είναι μία mobile/web εφαρμογή για συλλογή geodata μέσω smartphone. Το project χρηματοδοτήθηκε από το Wellcome Trust και σχεδιάστηκε αρχικά για τη συλλογή επιδημιολογικών δεδομένων απευθείας στο πεδίο.
+
+Μπορείτε να δημιουργήσετε το δικό σας project για τη συλλογή/απεικόνιση δεδομένων. Παρακάτω ακολουθεί μία σύντομη περιγραφή για το πώς να δημιουργήσετε ένα project και να συνεισφέρετε σε αυτό. Το παράδειγμα που δίνουμε βρίσκεται εδώ: [http://plus.epicollect.net/nerdcator/](http://plus.epicollect.net/nerdcator/) και δημιουργήθηκε χρησιμοποιώντας τον [online creator](http://plus.epicollect.net/createProject.html).
+
+Ο καλύτερος τρόπος για να δείτε πώς δουλεύει είναι να το κατεβάσετε και να δοκιμάσετε να εισάγετε κάποιο σημείο :)
+
+Να πώς:
+
+1. [Κατεβάστε την εφαρμογή για Android ](https://play.google.com/store/apps/details?id=uk.ac.imperial.epi_collect2&hl=en). Βεβαιωθείτε πως είναι *EpiCollect+(old)* εφαρμογή.
+2. Πατήστε 'Μenu' στο τηλεφώνό σας (η τοποθεσία του 'Μenu' διαφέρεισε κάθε τηλέφωνο)
+3. Φορτώστε το project `nerdcator`
+4. Πατήστε 'Start/Resume data collection`
+5. Προσθέστε `nerdy_points` και ακολουθήστε τη φόρμα
+6. Στο τέλος, επιλέξτε `Tap button to store record`, και List/Sync entries
+7. Πατήστε `Send data to Remote Server(s)`
+
+Αυτό ήταν. (θα πρέπει να φαίνεται "Y" δίπλα στο data point)
+
+Μπορείτε να ελέγξετε τα σημεία πηγαίνοντας στο [http://plus.epicollect.net/nerdcator/](http://plus.epicollect.net/nerdcator/) κι επιλέγοντας `"View all"`. Μπορείτε να δείτε τα δεδομένα είτε σε ένα πίνακα ή στο χάρτη αλλάζοντας το σχετικό tab (δείτε τις δύο εικόνες παρακάτω). Επίσης, μπορείτε να τα εξάγετε σε csv, κτλ.
+
+![WorldMap](../images/epicollect/table.png)
+
+![WorldMap](../images/epicollect/map.png)
+
+Μπορείτε να βρείτε κι ένα οδηγό βήμα-προς-βήμα.
+
+![WorldMap](../images/epicollect/01.png)
+
+![WorldMap](../images/epicollect/02.png)
+
+![WorldMap](../images/epicollect/03.png)
+
+![WorldMap](../images/epicollect/04.png)
+
+![WorldMap](../images/epicollect/05.png)
+
+![WorldMap](../images/epicollect/06.png)
+
+![WorldMap](../images/epicollect/07.png)
+
+![WorldMap](../images/epicollect/08.png)
+
+![WorldMap](../images/epicollect/09.png)
+
+![WorldMap](../images/epicollect/10.png)
+
+
