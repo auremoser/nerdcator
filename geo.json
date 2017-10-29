@@ -1141,6 +1141,38 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
+       "coordinates":  [ 132.428606,34.470735 ]
+    },
+    "properties": {
+    "Timestamp":"10/29/2017 17:30:12",
+    "Type":"Museums",
+    "Scientific Disciplines":"Engineering, Technology, Transport",
+    "Title":"Numaji Transport Museum",
+    "Description":"A transport museum near Hiroshima. A bit far away from the centre, but easily accessible – if you're a transport geek, you'll probably enjoy the trip there on the automated Astram Line.",
+    "Importance":"",
+    "Link":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -19.28446054,64.19706679 ]
+    },
+    "properties": {
+    "Timestamp":"10/29/2017 17:36:55",
+    "Type":"Historical Landmarks",
+    "Scientific Disciplines":"Humanities",
+    "Title":"Fjalla-Eyvindur outlaw hideout",
+    "Description":"Hideout of outlaw Fjalla-Eyvindur & his wife",
+    "Importance":"Historical site",
+    "Link":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
        "coordinates":  [ -1.255507,51.758623 ]
     },
     "properties": {
@@ -1151,6 +1183,38 @@
     "Description":"A nice natural history museum with dinosaurs",
     "Importance":"sure",
     "Link":"http://oum.ox.ac.uk"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.942164,52.849134 ]
+    },
+    "properties": {
+    "Timestamp":"10/30/2017 17:15:55",
+    "Type":"Museums",
+    "Scientific Disciplines":"Technology",
+    "Title":"Schiffshebewerk Niederfinow",
+    "Description":"Like an elevator, but for ships",
+    "Importance":"unclear",
+    "Link":"http://www.schiffshebewerk-niederfinow.info"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.263858,51.752514 ]
+    },
+    "properties": {
+    "Timestamp":"10/30/2017 17:15:55",
+    "Type":"Hackerspace",
+    "Scientific Disciplines":"Technology, computer science",
+    "Title":"Hackspace Oxford",
+    "Description":"A nice Hackerspace",
+    "Importance":"zero",
+    "Link":"https://oxhack.org"
     }
   }
 ]
