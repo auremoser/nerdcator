@@ -1,9 +1,14 @@
 # nerdcator.org
 [session] mapping nerdy places at Mozfest
 
-![WorldMap](images/world.png)
+[![WorldMap](images/world.png)](http://nerdcator.org)
 
 *Screenshot of our prototype demoed at MozFest 2016*
+
+At *Mozfest 2016* we ran an interactive session that started to collect nerdy travel recommendations. This year we want your brain power: What is missing? What's your best/most nerdy travel tip that wouldn't be in regular guide books? [Check in at our Etherpad at https://public.etherpad-mozilla.org/p/nerdcator2017](https://public.etherpad-mozilla.org/p/nerdcator2017).
+
+
+Below you can find our original documentation.
 
 * [English Version](#english)
 * [German Version](#german)
