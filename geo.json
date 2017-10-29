@@ -800,6 +800,102 @@
     "Importance":"",
     "Link":"www.ntua.gr"
     }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -43.18425,22.51036 ]
+    },
+    "properties": {
+    "Timestamp":"10/29/2017 16:35:37",
+    "Type":"Museums",
+    "Scientific Disciplines":"Physics, Technology, Aviation",
+    "Title":"House of Santos Dumont",
+    "Description":"The house of aviation pioneer and inventor Santos Dumont in Petropolis.",
+    "Importance":"",
+    "Link":"http://www.petropolis.rj.gov.br/fct/index.php/turismo/atrativos-turisticos/94-centro-historico-aberto-a-visitacao/73-museu-casa-de-santos-dumont.html"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -17.34477282,66.04677183 ]
+    },
+    "properties": {
+    "Timestamp":"10/29/2017 16:44:43",
+    "Type":"Museums",
+    "Scientific Disciplines":"Biological Sciences",
+    "Title":"Húsavík Whale Museum",
+    "Description":"Awesome museum on all aspects of whale biology, whaling, skeletons & everything !!",
+    "Importance":"Impressive exhibit, very sciencey!",
+    "Link":"http://www.whalemuseum.is/"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -18.00642014,66.54819514 ]
+    },
+    "properties": {
+    "Timestamp":"10/29/2017 16:52:06",
+    "Type":"Geological Landmark",
+    "Scientific Disciplines":"Geology",
+    "Title":"Grímsey",
+    "Description":"The arctic circle runs through this small island, at least for now!",
+    "Importance":"",
+    "Link":"https://en.wikipedia.org/wiki/Gr%C3%ADmsey"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -17.34457433,66.04777583 ]
+    },
+    "properties": {
+    "Timestamp":"10/29/2017 16:53:24",
+    "Type":"Museums",
+    "Scientific Disciplines":"Exploration",
+    "Title":"The Exploration Museum",
+    "Description":"Museum about the history of exploration, from vikings to polar explorers to ... ",
+    "Importance":"Very sciencey !",
+    "Link":"http://www.explorationmuseum.com/"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.667440414,50.12820292 ]
+    },
+    "properties": {
+    "Timestamp":"10/29/2017 16:56:28",
+    "Type":"Historical Landmarks",
+    "Scientific Disciplines":"Social Sciences, Humanities",
+    "Title":"Adorno's Desk",
+    "Description":"The desk of philosopher and sociologist Theodor Adorno can be found standing outside on the campus. ",
+    "Importance":"",
+    "Link":"https://en.wikipedia.org/wiki/Theodor_W._Adorno"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.42012167,52.5129008 ]
+    },
+    "properties": {
+    "Timestamp":"10/29/2017 16:57:06",
+    "Type":"Hackerspace",
+    "Scientific Disciplines":"Technology",
+    "Title":"c-Base",
+    "Description":"Abandoned alien space ship, now used as a Hackerspace. Also events and parties.",
+    "Importance":"high",
+    "Link":"http://c-base.org/"
+    }
   }
 ]
 }
