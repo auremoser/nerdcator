@@ -1,102 +1,125 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Nerdcator | CartoJS</title>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <link rel="shortcut icon" href="https://carto.com/favicon.ico" />
-    <link rel="stylesheet" href="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/themes/css/cartodb.css" />
-    <style>
-      html, body, #map {
-        background-color: #FFF3E0;
-        height: 100%;
-        padding: 0;
-        margin: 0;
-      }
-      header {
-        background-color: #FFD180;
-        font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
-        font-size: 45px;
-        text-align: center;
-      }
-      #map {
-        width: 55%;
-      }
-      #form {
-        height: 400;
-        float: right;
-        top: 0px;
-        right: 0px;
-      }
-      .cartodb-popup-content-wrapper {
-       height: 275px;
-      }
-      .cartodb-popup-content {
-       height: 175px;
-      }
-      #infowindow_template {
-          width: 250px;
-      }
-      div.cartodb-popup.v2 {
-        width: 250px  !important;
-        height: 150px;
-      }
-    </style>
-  </head>
-  <body>
-    <header>Nerdcator</header>
+<head>
+	<title>Nerdcator.org: Leaflet-Demo</title>
+	<!--  -->
+	<script type="text/javascript" src="https://npmcdn.com/@turf/turf@3.5.1/turf.min.js"></script>
+	<!-- leaflet -->
+	<link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+	<script src="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<!-- bootstrap -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--  filesaver -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2014-11-29/FileSaver.min.js"></script>
+	<!-- d3 -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+	<!-- leaflet draw -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.4.0/leaflet.draw.css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.4.0/leaflet.draw.js"></script>
+</head>
+<style type="text/css">
+	html, body {
+	   height: 100%;
+	}
+	#mapid{
+		width:100%;
+		height:100%;
+	}
+</style>
+<body>
+	<div id="mapid"></div>
+	<script type="text/javascript">
+		var map;
+		function initMap(){
+		    // initialize map container
+		    map = L.map('mapid').setView([51.508530, 0.0], 2);
 
-    <div id="form"><iframe src="https://docs.google.com/a/mozillafoundation.org/forms/d/e/1FAIpQLSdWnNvyuSpcz_p5NTXLEb57x3eWorMPSTgt4-j88t0w9gEGtQ/viewform?embedded=true" width="640" height="800" frameborder="0" float="right" marginheight="0" marginwidth="0">Loading...</iframe></div>
-    <div id="map"></div>
-    <!-- add infowindows -->
-    <script type="infowindow/html" id="infowindow_template">
-      <div class="cartodb-popup v2">
-        <a href="#close" class="cartodb-popup-close-button close">x</a>
-         <div class="cartodb-popup-content-wrapper">
-           <div class="cartodb-popup-header">
-           </div>
-           <div class="cartodb-popup-content">
-             <h4></h4>
-           </div>
-         </div>
-         <div class="cartodb-popup-tip-container"></div>
-      </div>
-    </script>
+		    // get the stamen toner-lite tiles
+		    var Stamen_Toner = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		        attribution: '© <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+		        // subdomains: 'abcd',
+		        minZoom: 0,
+						maxZoom: 18
+		        // maxZoom: 20,
+		        // ext: 'png'
+		    });
 
-    <!-- include cartodb.js library -->
-    <script src="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/cartodb.js"></script>
+		    // add the tiles to the map
+		    Stamen_Toner.addTo(map);
 
-    <script>
-    function main() {
-      var map = new L.Map('map', {
-          center: [0,0],
-          zoom: 2
-        });
+		    //disable scroll wheel zoom
+		    //map.scrollWheelZoom.disable();
+		}
+		initMap();
 
-        L.tileLayer('https://cartocdn_{s}.global.ssl.fastly.net/base-antique/{z}/{x}/{y}.png', {
-          attribution: ''
-        }).addTo(map);
-    //add vis.json for nerdcator map
-        cartodb.createLayer(map, 'https://auremoser.carto.com/api/v2/viz/025a7af6-9082-11e6-80fb-0ecd1babdde5/viz.json')
+		// Initialise the FeatureGroup to store editable layers
+		var drawnItems = new L.FeatureGroup();
+		map.addLayer(drawnItems);
 
-        .addTo(map)
-    // add infowindow to done callback
-        .done(function(layers) {
-                  
-                  // define sublayer
-                  var sublayer = layers.getSubLayer(0);
-                  
-                  // add infowindow interactivity to the sublayer (show cartodb_id and name columns from the table)
-                   cartodb.vis.Vis.addInfowindow(map, sublayer, ['what_is_the_place_called', 'where_is_this_place', 'why_is_it_important']);
-                   
-                // add basemap
-                 L.tileLayer('http://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png',{
-                   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://carto.com/attributions">CARTO</a>',zIndex:100
-                  }).addTo(map);
-                })
-              }
-         
-    window.onload = main;
-    </script>
-  </body>
+		// Initialise the draw control and pass it the FeatureGroup of editable layers
+		var drawControl = new L.Control.Draw({
+		    edit: {
+		        featureGroup: drawnItems
+		    },
+				draw : {
+						polyline : false,
+						polygon : false,
+						rectangle : false,
+						circle : false
+				}
+		});
+		map.addControl(drawControl);
+
+
+		// and keep the drawn items on the map
+		map.on('draw:created', function(e) {
+		    var type = e.layerType,
+		        layer = e.layer;
+
+		    if (type === 'marker') {
+						var lat = layer.getLatLng().lat;
+						var long = layer.getLatLng().lng;
+						//var poptext = "<b><a href='";
+						//poptext += "https://docs.google.com/forms/d/e/1FAIpQLSfdsZNlgxK72DkoXlNpJVWDN08uTZNPmqx3Zik-L5Btmdj9WQ/viewform?entry.1819633361=";
+						//poptext += lat + "&entry.2141972414=" + long;
+						//poptext += "'>Enter Your New Point of Interest</a></b>"
+						var poptext = '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfdsZNlgxK72DkoXlNpJVWDN08uTZNPmqx3Zik-L5Btmdj9WQ/viewform?embedded=true&entry.1819633361='+ lat + "&entry.2141972414=" + long + '" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>';
+		        layer.bindPopup(poptext);
+		    }
+
+		    drawnItems.addLayer(layer);
+		});
+
+
+		map.on("keypress", function(e){
+		  console.log(e.originalEvent.key);
+		  if(e.originalEvent.key == 1){
+		  	downloadJson(drawnItems, "mydrawnItems.geojson");
+		  }
+		});
+
+
+		$.getJSON("./geo.json", function (sample_points) {
+			L.geoJson(sample_points, {
+					style: function (feature) {
+							return {color: feature.properties.color};
+					},
+					onEachFeature: function (feature, layer) {
+							layer.bindPopup("<b>" + feature.properties.Title + "</b><br/>" + feature.properties.Description +"<br/><a href='"+ feature.properties.Link + "'>" + feature.properties.Link + "</a>");
+					}
+			}).addTo(map);
+
+		  })
+
+
+//	L.geoJson(sample_points, onEachFeature: function (feature, layer) {
+//        layer.bindPopup(feature.properties.title);
+//    }).addTo(map);
+
+		// add your things below
+	</script>
+</body>
 </html>
