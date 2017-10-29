@@ -805,7 +805,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -43.18425,22.51036 ]
+       "coordinates":  [ 22.51036,-43.18425 ]
     },
     "properties": {
     "Timestamp":"10/29/2017 16:35:37",
