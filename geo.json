@@ -805,7 +805,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 22.51036,-43.18425 ]
+       "coordinates":  [ -43.18425,-22.51036 ]
     },
     "properties": {
     "Timestamp":"10/29/2017 16:35:37",
@@ -895,6 +895,262 @@
     "Description":"Abandoned alien space ship, now used as a Hackerspace. Also events and parties.",
     "Importance":"high",
     "Link":"http://c-base.org/"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -74.604351,41.082811 ]
+    },
+    "properties": {
+    "Timestamp":"10/29/2017 17:00:44",
+    "Type":"Museums",
+    "Scientific Disciplines":"Biological Sciences, Physics",
+    "Title":"Fluorescent Rocks of Sterling Hill Mine",
+    "Description":"Hundreds of glow-in-the-dark objects light up a museum in a historic zinc mine. ",
+    "Importance":"Really cool glow rocks",
+    "Link":"https://en.wikipedia.org/wiki/Sterling_Hill_Mining_Museum"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -21.55609846,65.94430707 ]
+    },
+    "properties": {
+    "Timestamp":"10/29/2017 17:02:11",
+    "Type":"Factory/Art gallery ",
+    "Scientific Disciplines":"Manufacturing",
+    "Title":"The Herring Factory",
+    "Description":"The Herring Factory in Djúpavík - closed factory that is open to the public for tours & functions as an art gallery. ",
+    "Importance":"Used to be the biggest herring factory in the country! Impressive deteriorating structure.",
+    "Link":"https://www.westfjords.is/en/town/index/the-herring-factory-in-djupavik"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 1.685532,48.518059 ]
+    },
+    "properties": {
+    "Timestamp":"10/29/2017 17:04:42",
+    "Type":"Museums",
+    "Scientific Disciplines":"Social Sciences, Technology",
+    "Title":"Musée Ateliers des Pionniers",
+    "Description":"A museum of antique transport full of old weird bikes.",
+    "Importance":"Cyclist haven",
+    "Link":"http://www.musee-ateliers-des-pionniers.fr/"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 5.327977538,60.38105697 ]
+    },
+    "properties": {
+    "Timestamp":"10/29/2017 17:05:01",
+    "Type":"Makerspace",
+    "Scientific Disciplines":"Engineering, Technology",
+    "Title":"Marineholmen Makerspace",
+    "Description":"Makerspace in Bergen, opened in September 2017",
+    "Importance":"It's a makerspace.",
+    "Link":"http://bergenmakers.no"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 11.5858072,48.13151818 ]
+    },
+    "properties": {
+    "Timestamp":"10/29/2017 17:07:06",
+    "Type":"Museums",
+    "Scientific Disciplines":"Biological Sciences, Chemistry, Physics, Mathematics, Engineering, Social Sciences, Humanities, Technology",
+    "Title":"Deutsches Museum",
+    "Description":"Massive science museum, you can easily spend an entire day there.",
+    "Importance":"",
+    "Link":"http://www.deutsches-museum.de/en"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.357678,48.862904 ]
+    },
+    "properties": {
+    "Timestamp":"10/29/2017 17:07:55",
+    "Type":"Weird doors",
+    "Scientific Disciplines":"Engineering, Technology",
+    "Title":"Les Spécialistes' Fake Door",
+    "Description":"Trompe l'œil street art that looks like a door.",
+    "Importance":"Weird fake door made by artists.",
+    "Link":"https://www.atlasobscura.com/places/les-specialistes-fake-door"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.393921,52.51339392 ]
+    },
+    "properties": {
+    "Timestamp":"10/29/2017 17:08:46",
+    "Type":"Hackerspace",
+    "Scientific Disciplines":"computer science",
+    "Title":"CCC Berlin",
+    "Description":"Was a Hackerspace, before they were cool.",
+    "Importance":"High",
+    "Link":"https://berlin.ccc.de/wiki/Hauptseite"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -23.8369,65.5162 ]
+    },
+    "properties": {
+    "Timestamp":"10/29/2017 17:08:49",
+    "Type":"Object",
+    "Scientific Disciplines":"Engineering, Technology",
+    "Title":"Garðar BA 64 ship",
+    "Description":"The oldest steel ship in Iceland that has been beached for years and is now a rusting ruin. ",
+    "Importance":"Oldest steel ship in Iceland.",
+    "Link":"https://www.atlasobscura.com/places/gardar-ba-64"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.377885,52.498633 ]
+    },
+    "properties": {
+    "Timestamp":"10/29/2017 17:14:27",
+    "Type":"Museums",
+    "Scientific Disciplines":"Technology",
+    "Title":"Deutsches Technik Museum",
+    "Description":"Museum for technology",
+    "Importance":"",
+    "Link":"http://sdtb.de/stiftung/startseite/"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -115.8535767,33.33626508 ]
+    },
+    "properties": {
+    "Timestamp":"10/29/2017 17:15:03",
+    "Type":"Landscape",
+    "Scientific Disciplines":"Chemistry, Engineering, Geology",
+    "Title":"Salton Sea",
+    "Description":"An artificial lake with a salinity that is higher than the Pacific's! ",
+    "Importance":"The salinity is increasing, creating a unique habitat. Due to changes in the feeding drainage systems the lake is slowly drying out.",
+    "Link":"https://en.wikipedia.org/wiki/Salton_Sea"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 136.849319,35.04735 ]
+    },
+    "properties": {
+    "Timestamp":"10/29/2017 17:15:26",
+    "Type":"Museums",
+    "Scientific Disciplines":"Engineering, Technology",
+    "Title":"SCMaglev and Railway Park",
+    "Description":"A rail museum near Nagoya (mainly high-speed rail), complete with prototypes of future trains.",
+    "Importance":"",
+    "Link":"http://museum.jr-central.co.jp/en/"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -22.52884984,63.97606447 ]
+    },
+    "properties": {
+    "Timestamp":"10/29/2017 17:15:55",
+    "Type":"Museums",
+    "Scientific Disciplines":"Humanities",
+    "Title":"Viking World",
+    "Description":"A viking museum that has a replica of a viking longship, which you can climb into!",
+    "Importance":"Excellent exhibit, lots of learning materials, real ship!",
+    "Link":"http://www.vikingaheimar.is/en"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.497608304,49.47621134 ]
+    },
+    "properties": {
+    "Timestamp":"10/29/2017 17:21:06",
+    "Type":"Museums",
+    "Scientific Disciplines":"Engineering, Social Sciences, Technology",
+    "Title":"Technoseum",
+    "Description":"A museum of technology and work. Has lots of buttons to press and short excursions on a heritage steam train.",
+    "Importance":"",
+    "Link":"http://www.en.technoseum.de"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -16.22569084,65.19331995 ]
+    },
+    "properties": {
+    "Timestamp":"10/29/2017 17:27:40",
+    "Type":"Historical Landmarks",
+    "Scientific Disciplines":"Humanities",
+    "Title":"Herdubreidarlindir oasis (refuge hideout)",
+    "Description":"Outlaws would seek refuge in this area in former times, the best known being Fjalla-Eyvindur. ",
+    "Importance":"Intersting geological & historical site",
+    "Link":"https://guidetoiceland.is/travel-iceland/drive/herdubreidarlindir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.459402,22.589516 ]
+    },
+    "properties": {
+    "Timestamp":"10/29/2017 17:27:52",
+    "Type":"Lab-Tours",
+    "Scientific Disciplines":"Biological Sciences",
+    "Title":"China National Gene Bank",
+    "Description":"One of China's biggest DNA storage facilities. Get a lift from the BGI people in Shenzhen if you're lucky!",
+    "Importance":"",
+    "Link":"https://www.cngb.org/contact_us.html"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.255507,51.758623 ]
+    },
+    "properties": {
+    "Timestamp":"10/29/2017 17:15:55",
+    "Type":"Museums",
+    "Scientific Disciplines":"Biological Sciences",
+    "Title":"Oxford University Museum of Natural History",
+    "Description":"A nice natural history museum with dinosaurs",
+    "Importance":"sure",
+    "Link":"http://oum.ox.ac.uk"
     }
   }
 ]
