@@ -784,6 +784,22 @@
     "Importance":"Foundational evolutionary scientist",
     "Link":"http://www.english-heritage.org.uk/visit/places/home-of-charles-darwin-down-house/"
     }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 23.78286839,37.978067 ]
+    },
+    "properties": {
+    "Timestamp":"10/29/2017 12:44:45",
+    "Type":"University",
+    "Scientific Disciplines":"Physics, Engineering",
+    "Title":"National Technical University of Athens",
+    "Description":"Campus of National Technical University of Athens",
+    "Importance":"",
+    "Link":"www.ntua.gr"
+    }
   }
 ]
 }
